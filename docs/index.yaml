@@ -1032,6 +1032,23 @@ Kubernetes:
             - Credential Access
           platform: Kubernetes
           isIdempotent: true
+    Discovery:
+        - id: k8s.discovery.prometheus-cluster-recon
+          name: Perform Cluster Reconnaissance via Prometheus
+          isSlow: false
+          mitreAttackTactics:
+            - Discovery
+          platform: Kubernetes
+          isIdempotent: false
+    Execution:
+        - id: k8s.privilege-escalation.create-argo-workflow
+          name: Create Malicious Argo Workflow
+          isSlow: false
+          mitreAttackTactics:
+            - Privilege Escalation
+            - Execution
+          platform: Kubernetes
+          isIdempotent: false
     Persistence:
         - id: k8s.persistence.create-admin-clusterrole
           name: Create Admin ClusterRole
@@ -1055,6 +1072,14 @@ Kubernetes:
             - Persistence
           platform: Kubernetes
           isIdempotent: true
+        - id: k8s.privilege-escalation.create-argocd-application
+          name: Create Malicious Argo CD Application
+          isSlow: false
+          mitreAttackTactics:
+            - Privilege Escalation
+            - Persistence
+          platform: Kubernetes
+          isIdempotent: false
     Privilege Escalation:
         - id: k8s.persistence.create-admin-clusterrole
           name: Create Admin ClusterRole
@@ -1062,6 +1087,22 @@ Kubernetes:
           mitreAttackTactics:
             - Persistence
             - Privilege Escalation
+          platform: Kubernetes
+          isIdempotent: false
+        - id: k8s.privilege-escalation.create-argo-workflow
+          name: Create Malicious Argo Workflow
+          isSlow: false
+          mitreAttackTactics:
+            - Privilege Escalation
+            - Execution
+          platform: Kubernetes
+          isIdempotent: false
+        - id: k8s.privilege-escalation.create-argocd-application
+          name: Create Malicious Argo CD Application
+          isSlow: false
+          mitreAttackTactics:
+            - Privilege Escalation
+            - Persistence
           platform: Kubernetes
           isIdempotent: false
         - id: k8s.privilege-escalation.hostpath-volume

@@ -70,12 +70,14 @@ This provides coverage matrices of MITRE ATT&CK tactics and techniques currently
 </div>
 <h2>Kubernetes</h2>
 <div class="table-container"><table>
-<thead><tr><th>Persistence</th><th>Privilege Escalation</th><th>Credential Access</th></tr></thead>
+<thead><tr><th>Execution</th><th>Persistence</th><th>Privilege Escalation</th><th>Credential Access</th><th>Discovery</th></tr></thead>
 <tbody>
-<tr><td><a href="../Kubernetes/k8s.persistence.create-admin-clusterrole">Create Admin ClusterRole</a></td><td><a href="../Kubernetes/k8s.persistence.create-admin-clusterrole">Create Admin ClusterRole</a></td><td><a href="../Kubernetes/k8s.credential-access.dump-secrets">Dump All Secrets</a></td></tr>
-<tr><td><a href="../Kubernetes/k8s.persistence.create-client-certificate">Create Client Certificate Credential</a></td><td><a href="../Kubernetes/k8s.privilege-escalation.hostpath-volume">Container breakout via hostPath volume mount</a></td><td><a href="../Kubernetes/k8s.credential-access.steal-serviceaccount-token">Steal Pod Service Account Token</a></td></tr>
-<tr><td><a href="../Kubernetes/k8s.persistence.create-token">Create Long-Lived Token</a></td><td><a href="../Kubernetes/k8s.privilege-escalation.nodes-proxy">Privilege escalation through node/proxy permissions</a></td><td></td></tr>
-<tr><td></td><td><a href="../Kubernetes/k8s.privilege-escalation.privileged-pod">Run a Privileged Pod</a></td><td></td></tr>
+<tr><td><a href="../Kubernetes/k8s.privilege-escalation.create-argo-workflow">Create Malicious Argo Workflow</a></td><td><a href="../Kubernetes/k8s.persistence.create-admin-clusterrole">Create Admin ClusterRole</a></td><td><a href="../Kubernetes/k8s.persistence.create-admin-clusterrole">Create Admin ClusterRole</a></td><td><a href="../Kubernetes/k8s.credential-access.dump-secrets">Dump All Secrets</a></td><td><a href="../Kubernetes/k8s.discovery.prometheus-cluster-recon">Perform Cluster Reconnaissance via Prometheus</a></td></tr>
+<tr><td></td><td><a href="../Kubernetes/k8s.persistence.create-client-certificate">Create Client Certificate Credential</a></td><td><a href="../Kubernetes/k8s.privilege-escalation.create-argo-workflow">Create Malicious Argo Workflow</a></td><td><a href="../Kubernetes/k8s.credential-access.steal-serviceaccount-token">Steal Pod Service Account Token</a></td><td></td></tr>
+<tr><td></td><td><a href="../Kubernetes/k8s.persistence.create-token">Create Long-Lived Token</a></td><td><a href="../Kubernetes/k8s.privilege-escalation.create-argocd-application">Create Malicious Argo CD Application</a></td><td></td><td></td></tr>
+<tr><td></td><td><a href="../Kubernetes/k8s.privilege-escalation.create-argocd-application">Create Malicious Argo CD Application</a></td><td><a href="../Kubernetes/k8s.privilege-escalation.hostpath-volume">Container breakout via hostPath volume mount</a></td><td></td><td></td></tr>
+<tr><td></td><td></td><td><a href="../Kubernetes/k8s.privilege-escalation.nodes-proxy">Privilege escalation through node/proxy permissions</a></td><td></td><td></td></tr>
+<tr><td></td><td></td><td><a href="../Kubernetes/k8s.privilege-escalation.privileged-pod">Run a Privileged Pod</a></td><td></td><td></td></tr>
 </tbody>
 </table>
 </div>

@@ -4,6 +4,11 @@ This page contains the Stratus attack techniques for Kubernetes, grouped by MITR
 Note that some Stratus attack techniques may correspond to more than a single ATT&CK Tactic.
 
 
+## Execution
+  
+  - [Create Malicious Argo Workflow](./k8s.privilege-escalation.create-argo-workflow.md)
+  
+
 ## Persistence
   
   - [Create Admin ClusterRole](./k8s.persistence.create-admin-clusterrole.md)
@@ -12,10 +17,16 @@ Note that some Stratus attack techniques may correspond to more than a single AT
   
   - [Create Long-Lived Token](./k8s.persistence.create-token.md)
   
+  - [Create Malicious Argo CD Application](./k8s.privilege-escalation.create-argocd-application.md)
+  
 
 ## Privilege Escalation
   
   - [Create Admin ClusterRole](./k8s.persistence.create-admin-clusterrole.md)
+  
+  - [Create Malicious Argo Workflow](./k8s.privilege-escalation.create-argo-workflow.md)
+  
+  - [Create Malicious Argo CD Application](./k8s.privilege-escalation.create-argocd-application.md)
   
   - [Container breakout via hostPath volume mount](./k8s.privilege-escalation.hostpath-volume.md)
   
@@ -29,4 +40,9 @@ Note that some Stratus attack techniques may correspond to more than a single AT
   - [Dump All Secrets](./k8s.credential-access.dump-secrets.md)
   
   - [Steal Pod Service Account Token](./k8s.credential-access.steal-serviceaccount-token.md)
+  
+
+## Discovery
+  
+  - [Perform Cluster Reconnaissance via Prometheus](./k8s.discovery.prometheus-cluster-recon.md)
   
